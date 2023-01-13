@@ -1,0 +1,55 @@
+html{overflow-x:hidden;}
+
+#logo{
+    width:80px !important;
+}
+
+#hero_img{
+    width:100vw;
+    height: 689px;
+    background-size: 100%;
+    background-repeat: no-repeat !important;
+}
+#kitchen_img{
+    width:50vw;
+    height: 428px;
+    background-size: 100%;
+    background-repeat: no-repeat !important;
+}
+#xp_img{
+    width:100vw;
+    height: 514px;
+    background-size:100%;
+    background-repeat: no-repeat !important;
+}
+
+#title{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 90px;
+    font-weight:400;
+}
+#subtitle{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:32px;
+    font-weight: 300;
+}
+#header1, #xp_header{
+    font-family: 'Playfair Display', sans-serif;
+}
+#cta_btn{
+    font-family: 'Playfair Display', sans-serif;
+}
+
+
+.navoption{
+    font-size: 26px;
+    font-weight: 200;
+}
+.light_txt{
+    font-weight: 200;
+}
+
+*{
+    font: 'Helvetica Neue';
+
+}
