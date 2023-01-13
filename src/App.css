@@ -10,9 +10,30 @@ html{overflow-x:hidden;}
     background-size: 100%;
     background-repeat: no-repeat !important;
 }
+#contact_header_img{
+    width:100vw;
+    height: max-content;
+    background-size:100%;
+    background-repeat: no-repeat !important;
+}
 #kitchen_img{
     width:50vw;
     height: 428px;
+    background-size: 100%;
+    background-repeat: no-repeat !important;
+}
+#tile_bath_img{
+    height:550px;
+    background-size: 100%;
+    background-repeat: no-repeat !important;
+}
+#paint_roller_img{
+    height: 600px;
+    background-size: 100%;
+    background-repeat: no-repeat !important;
+}
+#wood_stack_img{
+    height: 750px;
     background-size: 100%;
     background-repeat: no-repeat !important;
 }
@@ -40,6 +61,9 @@ html{overflow-x:hidden;}
     font-family: 'Playfair Display', sans-serif;
 }
 
+#contact_page_header{
+    font-family: 'Playfair Display', sans-serif;
+}
 
 .navoption{
     font-size: 26px;
@@ -47,6 +71,15 @@ html{overflow-x:hidden;}
 }
 .light_txt{
     font-weight: 200;
+}
+.superlight_txt{
+    font-weight: 100;
+}
+.pfd{
+    font-family: 'Playfair Display', sans-serif;
+}
+.hvn{
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 *{

@@ -4,16 +4,26 @@ import kitchen_img from './kitchen_img.png'
 import xp_bg from './xp_bg.png'
 import cta_img from './cta_img.png'
 
+
+
 const Homepage = () => {
   return (
-    <div id="homepage" className='pt-[80px]'>
-        <div id="hero_img" className='flex-col border-black border-b justify-center'
+    <div id="homepage" className='pt-[80px] pb-[0px]'>
+        <div id="hero_img" className='flex flex-col border-black border-b justify-start items-center'
         style={{backgroundImage: `url(${hero_img})`}}>
-            <div id="title" className='ml-[50%]'>
+            <div className='flex flex-col ml-[40%]'>
+            <div id="title" className=''>
             ILIE & FLORICA
             </div>
-            <div id="subtitle" className='ml-[50%]'>
+            <div id="subtitle" className=''>
             Expert Home Improvements that you can afford
+            </div>
+            <div className='flex justify-center'>
+            <button id='cta_btn' className='ml-[0%] bg-black text-white light_txt mt-8 h-12 w-[50%] text-2xl opacity-90'>
+                Get Your Free Estimate
+            </button>
+            </div>
+            
             </div>
         </div>
 
