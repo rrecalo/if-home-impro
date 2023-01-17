@@ -7,14 +7,14 @@ const ContactPage = () => {
       <div id="contact_header_img" className='mt-[50px] pb-[50px] flex flex-col border-black border-b justify-start items-center'
         style={{backgroundImage: `url(${contact_img_bg})`}}>
 
-        <div id="contact_page_header" className='mx-auto sm:text-7xl text-6xl font-semibold pt-[50px] mt-10 text-white'>
+        <div id="contact_page_header" className='mx-auto text-7xl font-semibold pt-[50px] mt-10 text-white'>
         Contact Us
         </div>
-        <div id='' className='mx-auto text-center sm:text-3xl text-2xl superlight_txt pt-2 text-white'>
+        <div id='' className='mx-auto text-center text-3xl superlight_txt pt-2 text-white'>
         Any questions, concerns, and job inquiries are welcome
         </div>
 
-        <div id="contact_form" className='border-black border bg-stone-100 sm:w-[50%] w-10/12 h-[350px] mt-8'>
+        <div id="contact_form" className='border-black border bg-stone-100 w-[50%] h-[350px] mt-8'>
           <form className='flex flex-col w-[90%] mx-auto mt-8'>
             <div className='flex flex-row justify-center'>
               <label className='w-[100%]'>
@@ -36,7 +36,7 @@ const ContactPage = () => {
         <div className='mt-12 pfd text-4xl text-white'>
         Want to Call Instead?
         </div>
-        <div className='mt-2 hvn text-xl light_txt text-white w-10/12 mx-auto text-center'>
+        <div className='mt-2 hvn text-xl light_txt text-white'>
         Feel free to call or text <span className='font-medium'>678-360-2882</span> between the hours of 9AM-6PM Eastern Standard Time
         </div>
       </div>

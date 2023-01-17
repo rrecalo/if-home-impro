@@ -10,9 +10,6 @@ const Navbar = () => {
       <Logo id="logo" className="mr-[40%]"/>
       </Link>
       <div className='flex items-end gap-8 lg:gap-24 lg:mr-[10%]'>
-      <Link to="/about" className="navoption">
-        About
-      </Link>
       <Link to="/contact" className="navoption">
         Contact
       </Link>
