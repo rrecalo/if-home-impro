@@ -1,4 +1,18 @@
-html{overflow-x:hidden;}
+html{overflow-x:hidden !important;}
+body{overflow-x:hidden !important;}
+
+::-webkit-scrollbar{
+    width:7px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background: black;
+}
+
+
 
 #logo{
     width:80px !important;
@@ -12,29 +26,40 @@ html{overflow-x:hidden;}
 }
 #contact_header_img{
     width:100vw;
-    height: max-content;
-    background-size:100%;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat !important;
+}
+#about_header_img{
+    width:100vw;
+    height: 200px;
+    background-size:cover;
+    background-position: 50% 50%;
     background-repeat: no-repeat !important;
 }
 #kitchen_img{
-    width:50vw;
     height: 428px;
-    background-size: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
     background-repeat: no-repeat !important;
 }
+.gallery_img{
+    height:500px;
+    outline: 5px solid black;
+}
 #tile_bath_img{
-    height:550px;
-    background-size: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
     background-repeat: no-repeat !important;
 }
 #paint_roller_img{
-    height: 600px;
-    background-size: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
     background-repeat: no-repeat !important;
 }
 #wood_stack_img{
-    height: 750px;
-    background-size: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
     background-repeat: no-repeat !important;
 }
 #xp_img{
@@ -85,4 +110,34 @@ html{overflow-x:hidden;}
 *{
     font: 'Helvetica Neue';
 
+}
+
+
+@media only screen and (max-width: 1024px){
+    #hero_img{
+        width:100vw;
+        height:600px;
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat !important;
+    }
+    #kitchen_img{
+        height: 320px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #title{
+        font-size: 60px;
+    }
+    #subtitle{
+        font-size:32px;
+    }
+}
+
+@media only screen and (max-width:639px){
+    .gallery_img{
+        height:auto !important;
+        outline: 2px solid black;
+    }
 }

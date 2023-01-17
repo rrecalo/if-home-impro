@@ -6,6 +6,7 @@ import ContactPage from './Pages/ContactPage';
 import GalleryPage from './Pages/GalleryPage';
 import ServicesPage from './Pages/ServicesPage';
 import ScrollToTop from './ScrollToTop';
+import AboutPage from './Pages/AboutPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
     <Navbar />
     <Routes>
     <Route path="/" element={<Homepage />} />
+    <Route path="/about" element={<AboutPage />} />
     <Route path="/contact" element={<ContactPage />} />
     <Route path="/services" element={<ServicesPage />} />
     <Route path="/gallery" element={<GalleryPage />} />
