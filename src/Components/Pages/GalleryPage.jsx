@@ -1,15 +1,17 @@
-import React, {useEffect} from 'react'
-import GalleryImage from './GalleryImage'
-import gallery_header_img from '../gallery_header_img.png'
+import React from 'react'
+import GalleryImage from '../GalleryImage'
+import gallery_header_img from '../../Images/gallery_header_img.png'
 import { motion } from 'framer-motion'
 import { pageAnim } from '../AnimUtility'
 import { useQuery } from '@apollo/client'
-import { GET_GALLERY_IMAGES} from '../queries.js'
+import { GET_GALLERY_IMAGES} from '../../graphQL/queries.js'
 
 const GalleryPage = () => {
 
   const {loading, error, data} = useQuery(GET_GALLERY_IMAGES);
 
+  if(loading){return <motion.div className='flex flex-col justify-center pb-[200px]'>loading</motion.div>}
+  if(error){return <motion.div className='flex flex-col justify-center pb-[200px]'>Error occurred. try refreshing</motion.div>}
 
   return (
     <motion.div className='flex flex-col justify-center pb-[200px]'

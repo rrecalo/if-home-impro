@@ -1,15 +1,15 @@
 import './App.css';
-import HomePage from './Pages/HomePage';
-import Navbar from './Navbar';
+import HomePage from './Components/Pages/HomePage';
+import Navbar from './Components/Navigation/Navbar';
 import { Route, Routes } from 'react-router-dom';
-import ContactPage from './Pages/ContactPage';
-import GalleryPage from './Pages/GalleryPage';
-import ServicesPage from './Pages/ServicesPage';
-import ScrollToTop from './ScrollToTop';
-import AboutPage from './Pages/AboutPage';
-import Footer from './Pages/Footer';
-import PrivacyPage from './Pages/PrivacyPage';
-import TermsPage from './Pages/TermsPage';
+import ContactPage from './Components/Pages/ContactPage';
+import GalleryPage from './Components/Pages/GalleryPage';
+import ServicesPage from './Components/Pages/ServicesPage';
+import ScrollToTop from './Components/ScrollToTop';
+import AboutPage from './Components/Pages/AboutPage';
+import Footer from './Components/Footer';
+import PrivacyPage from './Components/Pages/PrivacyPage';
+import TermsPage from './Components/Pages/TermsPage';
 
 
 

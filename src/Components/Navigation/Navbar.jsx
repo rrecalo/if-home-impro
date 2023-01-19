@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import {ReactComponent as Logo} from './logo.svg';
+import {ReactComponent as Logo} from '../../logo.svg';
 import {FiMenu} from 'react-icons/fi'
 import {motion} from 'framer-motion'
 import {useAnimationControls} from 'framer-motion'
-import SideMenuOption from './Pages/SideMenuOption';
+import SideMenuOption from './SideMenuOption';
 
 var menuVariants = {
   shown:{

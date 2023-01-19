@@ -1,9 +1,10 @@
-import React, {useState} from 'react'
-import contact_img_bg from '../contact_img_bg.png'
+import React from 'react'
+import contact_img_bg from '../../Images/contact_img_bg.png'
 import {motion } from 'framer-motion'
 import { pageAnim } from '../AnimUtility'
-import { gql, useMutation } from '@apollo/client';
+//import { gql, useMutation } from '@apollo/client';
 
+/**
 const ADD_INQUIRY = gql`
   mutation CreateCustomerInquiry(
     $customerName: String!,
@@ -17,17 +18,21 @@ const ADD_INQUIRY = gql`
       message
     }
   }`;
+   */
   //mutation AddTodo($type: String!) {
   //  createCustomerInquiry(data: {customerName: "", emailAddress: "", message: ""})
   //}
 
 const ContactPage = () => {
 
+  /**
   const [info, setInfo] = useState({
     name: "",
     email: "",
     message: "",
   })
+
+  
   const [addInquiry] = useMutation(ADD_INQUIRY, {variables: {
     customerName: info.name,
     emailAddress: info.email,
@@ -35,13 +40,11 @@ const ContactPage = () => {
   }});
 
 
-/*
    {variables: {
     customerName: info.name,
     emailAddress: info.email,
     message: info.message
   }}
- */
 
 
   function handleFormSubmit(event){
@@ -52,7 +55,7 @@ const ContactPage = () => {
     setInfo({name:"", email:"", message:""});
     }
   }
-
+  */
 
 
 

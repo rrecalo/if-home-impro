@@ -1,8 +1,8 @@
 import React from 'react'
-import services_header_img from '../services_header_img.png'
-import paint_roller from '../paint_roller.png'
-import wood_stack from '../wood_stack.png'
-import tile_bathroom from '../tile_bathroom.png'
+import services_header_img from '../../Images/services_header_img.png'
+import paint_roller from '../../Images/paint_roller.png'
+import wood_stack from '../../Images/wood_stack.png'
+import tile_bathroom from '../../Images/tile_bathroom.png'
 
 const ServicesPage = () => {
   return (

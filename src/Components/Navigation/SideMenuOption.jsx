@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
@@ -6,7 +6,6 @@ const SideMenuOption = ({link, name, active,...props}) => {
 
     const location = useLocation();
     
-    useEffect(()=>{console.log(location)},[])
 
   return (
 

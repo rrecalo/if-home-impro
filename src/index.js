@@ -43,9 +43,9 @@ const client = new ApolloClient({
 
 root.render(
     <BrowserRouter>
-    <ApolloProvider client={client}>
-    <App />
-    </ApolloProvider>
+      <ApolloProvider client={client}>
+        <App />
+      </ApolloProvider>
     </BrowserRouter>
 );
 

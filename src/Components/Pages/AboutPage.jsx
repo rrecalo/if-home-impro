@@ -1,5 +1,5 @@
 import React from 'react'
-import about_header_img from '../about_header_img.png'
+import about_header_img from '../../Images/about_header_img.png'
 import { motion } from 'framer-motion'
 import { pageAnim } from '../AnimUtility'
 
