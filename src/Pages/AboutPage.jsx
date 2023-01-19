@@ -1,9 +1,12 @@
 import React from 'react'
 import about_header_img from '../about_header_img.png'
+import { motion } from 'framer-motion'
+import { pageAnim } from '../AnimUtility'
 
 const AboutPage = () => {
   return (
-    <div className='flex flex-col w-[100%] pb-[200px]'>
+    <motion.div className='flex flex-col w-[100%] pb-[200px]'
+    variants={pageAnim} initial="initial" animate="animate">
       <div id="about_header_img" className='mt-[50px] pb-[50px] flex flex-col border-black border-b justify-start items-center'
         style={{backgroundImage: `url(${about_header_img})`}}>
         <div id="contact_page_header" className='mx-auto text-7xl font-semibold pt-[50px] mt-10 text-white'>
@@ -25,7 +28,7 @@ const AboutPage = () => {
 
       
 
-    </div>
+    </motion.div>
   )
 }
 

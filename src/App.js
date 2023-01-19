@@ -1,5 +1,5 @@
 import './App.css';
-import Homepage from './Homepage';
+import HomePage from './Pages/HomePage';
 import Navbar from './Navbar';
 import { Route, Routes } from 'react-router-dom';
 import ContactPage from './Pages/ContactPage';
@@ -7,13 +7,29 @@ import GalleryPage from './Pages/GalleryPage';
 import ServicesPage from './Pages/ServicesPage';
 import ScrollToTop from './ScrollToTop';
 import AboutPage from './Pages/AboutPage';
+import { gql } from '@apollo/client';
+
+export const GET_GALLERY_IMAGES = gql`
+  {
+    galleryImages {
+      id
+      imageTitle
+      image {
+        url
+      }
+    }
+  }
+`;
+
+
+
 
 function App() {
   return (
     <>
     <Navbar />
     <Routes>
-    <Route path="/" element={<Homepage />} />
+    <Route path="/" element={<HomePage />} />
     <Route path="/about" element={<AboutPage />} />
     <Route path="/contact" element={<ContactPage />} />
     <Route path="/services" element={<ServicesPage />} />
