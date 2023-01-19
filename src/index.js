@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 const httpLink = createHttpLink({
-  uri: process.env.REACT_APP_GQL_ADDRESS,
+  uri: "https://api-us-east-1-shared-usea1-02.hygraph.com/v2/cld2c1ih60xb501tb616ratn9/master",
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -19,7 +19,6 @@ const authLink = setContext((_, { headers }) => {
   //const token = localStorage.getItem('token');
   const token = process.env.REACT_APP_GQL_TOKEN;
   // return the headers to the context so httpLink can read them
-  console.log(process.env.REACT_APP_GQL_ADDRESS);
   return {
     headers: {
       ...headers,
