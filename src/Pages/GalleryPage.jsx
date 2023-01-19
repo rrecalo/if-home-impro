@@ -1,13 +1,26 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import GalleryImage from './GalleryImage'
 import gallery_header_img from '../gallery_header_img.png'
+import { motion } from 'framer-motion'
+import { pageAnim } from '../AnimUtility'
+import { useQuery } from '@apollo/client'
+import { GET_GALLERY_IMAGES} from '../App.js'
 
 const GalleryPage = () => {
 
+  const {loading, error, data} = useQuery(GET_GALLERY_IMAGES);
+
+  useEffect(()=>{
+    console.log(loading);
+  }, [])
+
+  useEffect(()=>{
+    console.log(data);
+  }, [data]);
 
   return (
-
-    <div className='flex flex-col justify-center pb-[200px]'>
+    <motion.div className='flex flex-col justify-center pb-[200px]'
+    variants={pageAnim} initial="initial" animate="animate">
       <div id="contact_header_img" className='mt-[50px] pb-[50px] flex flex-col border-black border-b justify-start items-center'
         style={{backgroundImage: `url(${gallery_header_img})`}}>
 
@@ -20,14 +33,14 @@ const GalleryPage = () => {
       </div>
 
       <div className='pt-[150px] sm:w-[90%] w-[95%] mx-auto flex flex-row flex-wrap justify-center sm:gap-10 gap-6'>
-        <GalleryImage img={1}/>
-        <GalleryImage img={2}/>
-        <GalleryImage img={3}/>
-        <GalleryImage img={4}/>
-        <GalleryImage img={5}/>
-        <GalleryImage img={6}/>
+        {
+          data 
+          ?
+          data.galleryImages.map(obj =>{return (<GalleryImage url={obj.image.url} alt={obj.imageTitle}/>)})
+          : null
+        }
       </div>
-    </div>
+    </motion.div>
   )
 }
 

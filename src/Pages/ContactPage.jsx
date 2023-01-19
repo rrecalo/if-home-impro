@@ -1,9 +1,12 @@
 import React from 'react'
 import contact_img_bg from '../contact_img_bg.png'
+import { motion } from 'framer-motion'
+import { pageAnim } from '../AnimUtility'
 
 const ContactPage = () => {
   return (
-    <div className='flex flex-col pb-[0px]'>
+    <motion.div className='flex flex-col pb-[0px]'
+    variants={pageAnim} initial="initial" animate="animate">
       <div id="contact_header_img" className='mt-[50px] pb-[50px] flex flex-col border-black border-b justify-start items-center'
         style={{backgroundImage: `url(${contact_img_bg})`}}>
 
@@ -42,7 +45,7 @@ const ContactPage = () => {
       </div>
 
 
-    </div>
+    </motion.div>
   )
   
 }
