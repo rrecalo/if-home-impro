@@ -11,14 +11,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 const httpLink = createHttpLink({
-  uri: process.env.GRAPHQL_ADDRESS,
+  uri: process.env.REACT_APP_GQL_ADDRESS,
 });
 
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
   //const token = localStorage.getItem('token');
-  const token = process.env.GRAPHQL_TOKEN;
+  const token = process.env.REACT_APP_GQL_TOKEN;
   // return the headers to the context so httpLink can read them
+  console.log(process.env.REACT_APP_GQL_ADDRESS);
   return {
     headers: {
       ...headers,
