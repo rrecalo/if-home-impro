@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='bg-neutral-100 h-[150px] pt-[25px] flex justify-center items-center'>
+    <div className='bg-neutral-100 pt-[25px] pb-[25px] flex justify-center items-center'>
 
         
 
 
-        <div className='w-3/12 h-4/6 flex flex-col'>
+        <div className='lg:w-3/12 w:6/12 h-4/6 flex flex-col'>
             <div className='flex flex-row items-start justify-between'>
                 <div className='flex flex-col items-start justify-start '>
                     <div className='text-sm pfd font-semibold pb-2'>Contact Info</div>
