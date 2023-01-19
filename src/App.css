@@ -90,6 +90,11 @@ body{overflow-x:hidden !important;}
     font-family: 'Playfair Display', sans-serif;
 }
 
+#side_bar_link{
+    color:inherit !important;
+    text-decoration: none !important;
+}
+
 .navoption{
     font-size: 26px;
     font-weight: 200;
@@ -110,6 +115,16 @@ body{overflow-x:hidden !important;}
 *{
     font: 'Helvetica Neue';
 
+}
+li{
+    list-style: circle;
+}
+
+h3{padding-top: 20px;}
+
+h2{
+    font-weight: bold !important;
+    font-size:20px !important;
 }
 
 
