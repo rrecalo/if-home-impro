@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
             <div className='h-full flex flex-col items-center justify-center pt-[20px]'>
                     <div className='text-xs pfd'>
-                        © 2023 Ilie and Florica Recalo Home Improvements LLC
+                        © 2023 Ilie and Florica Home Improvements LLC
                     </div>
                 </div>
         </div>
