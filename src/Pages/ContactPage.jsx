@@ -60,7 +60,7 @@ const ContactPage = () => {
   return (
     <motion.div className='flex flex-col pb-[0px]'
     variants={pageAnim} initial="initial" animate="animate">
-      <div id="contact_header_img" className='mt-[50px] pb-[50px] flex flex-col border-black border-b justify-start items-center'
+      <div id="contact_header_img" className='mt-[50px] pb-[50px] h-[1000px] flex flex-col border-black border-b justify-start items-center'
         style={{backgroundImage: `url(${contact_img_bg})`}}>
 
         <div id="contact_page_header" className='mx-auto sm:text-7xl text-6xl font-semibold pt-[50px] mt-10 text-white'>
@@ -70,7 +70,28 @@ const ContactPage = () => {
         Any questions, concerns, and job inquiries are welcome
         </div>
 
-        <div id="contact_form" className='border-black border bg-stone-100 sm:w-[50%] w-10/12 h-[350px] mt-8'>
+        <div className='mt-2 hvn text-xl light_txt text-white w-10/12 mx-auto text-center mt-[100px]'>
+        Email us with your questions at <span className='font-medium'>ifhomeimpro@gmail.com</span> and we'll get back to you ASAP.
+        </div>
+
+
+        
+        <div className='mt-2 hvn text-xl light_txt text-white w-10/12 mx-auto text-center'>
+        Also, feel free to call or text <span className='font-medium'>678-360-2882</span> between the hours of 9AM-6PM Eastern Standard Time
+        </div>
+      </div>
+
+
+    </motion.div>
+  )
+  
+}
+
+/**
+ * <div className='mt-12 pfd text-4xl text-white text-center'>
+        Want to Call Instead?
+        </div>
+ *         <div id="contact_form" className='border-black border bg-stone-100 sm:w-[50%] w-10/12 h-[350px] mt-8'>
           <form className='flex flex-col w-[90%] mx-auto mt-8' onSubmit={e => handleFormSubmit(e)} autocomplete="off">
             <div className='flex flex-row justify-center'>
               <div className='w-[100%]'>
@@ -88,23 +109,6 @@ const ContactPage = () => {
             </div>
           </form>
         </div>
-
-        <div className='mt-12 pfd text-4xl text-white text-center'>
-        Want to Call Instead?
-        </div>
-        <div className='mt-2 hvn text-xl light_txt text-white w-10/12 mx-auto text-center'>
-        Feel free to call or text <span className='font-medium'>678-360-2882</span> between the hours of 9AM-6PM Eastern Standard Time
-        </div>
-      </div>
-
-
-    </motion.div>
-  )
-  
-}
-
-/**
- * 
  */
 
 export default ContactPage
