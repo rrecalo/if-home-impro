@@ -42,12 +42,10 @@ const client = new ApolloClient({
 */
 
 root.render(
-  <React.StrictMode>
     <BrowserRouter>
     <ApolloProvider client={client}>
     <App />
     </ApolloProvider>
     </BrowserRouter>
-  </React.StrictMode>
 );
 
