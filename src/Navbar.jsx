@@ -5,6 +5,7 @@ import {ReactComponent as Logo} from './logo.svg';
 import {FiMenu} from 'react-icons/fi'
 import {motion} from 'framer-motion'
 import {useAnimationControls} from 'framer-motion'
+import SideMenuOption from './Pages/SideMenuOption';
 
 var menuVariants = {
   shown:{
@@ -70,6 +71,7 @@ const Navbar = () => {
       <Logo id="logo" className="mr-[40%]"/>
       </Link>
       <div className='hidden sm:flex items-end gap-8 lg:gap-24 lg:mr-[10%]'>
+
       <Link to="/about" className="navoption">
         About
       </Link>
@@ -93,18 +95,11 @@ const Navbar = () => {
       variants={menuVariants}
       initial={"notShown"}
       animate={controls}>
-      <Link to="/about" className='py-2'>
-        About
-      </Link>
-      <Link to="/contact" className='py-2'>
-        Contact
-      </Link>
-      <Link to="/services" className='py-2'>
-        Services
-      </Link>
-      <Link to="/gallery" className='py-2'>
-        Gallery
-      </Link>
+      <SideMenuOption link="/" name="Home" />
+      <SideMenuOption link="/about" name="About" />
+      <SideMenuOption link="/contact" name="Contact" />
+      <SideMenuOption link="/services" name="Services" />
+      <SideMenuOption link="/gallery" name="Gallery" />
       </motion.div>
 
       </div>

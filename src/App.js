@@ -7,19 +7,10 @@ import GalleryPage from './Pages/GalleryPage';
 import ServicesPage from './Pages/ServicesPage';
 import ScrollToTop from './ScrollToTop';
 import AboutPage from './Pages/AboutPage';
-import { gql } from '@apollo/client';
+import Footer from './Pages/Footer';
+import PrivacyPage from './Pages/PrivacyPage';
+import TermsPage from './Pages/TermsPage';
 
-export const GET_GALLERY_IMAGES = gql`
-  {
-    galleryImages {
-      id
-      imageTitle
-      image {
-        url
-      }
-    }
-  }
-`;
 
 
 
@@ -34,7 +25,11 @@ function App() {
     <Route path="/contact" element={<ContactPage />} />
     <Route path="/services" element={<ServicesPage />} />
     <Route path="/gallery" element={<GalleryPage />} />
+    <Route path="/privacy" element={<PrivacyPage />} />
+    <Route path="/tos" element={<TermsPage />} />
+    <Route path="/*" element={<HomePage />} />
     </Routes>
+    <Footer />
     <ScrollToTop />
     </>
   );

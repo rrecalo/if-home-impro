@@ -90,6 +90,11 @@ body{overflow-x:hidden !important;}
     font-family: 'Playfair Display', sans-serif;
 }
 
+#side_bar_link{
+    color:inherit !important;
+    text-decoration: none !important;
+}
+
 .navoption{
     font-size: 26px;
     font-weight: 200;
@@ -110,6 +115,16 @@ body{overflow-x:hidden !important;}
 *{
     font: 'Helvetica Neue';
 
+}
+li{
+    list-style: circle;
+}
+
+h3{padding-top: 20px;}
+
+h2{
+    font-weight: bold !important;
+    font-size:20px !important;
 }
 
 
@@ -139,5 +154,30 @@ body{overflow-x:hidden !important;}
     .gallery_img{
         height:auto !important;
         outline: 2px solid black;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    #title{
+        font-size: 52px;
+    }
+    #subtitle{
+        font-size:24px;
+    }
+}
+@media only screen and (max-width: 410px){
+    #title{
+        font-size: 46px;
+    }
+    #subtitle{
+        font-size:22px;
+    }
+}
+@media only screen and (max-width: 470px){
+    #title{
+        font-size: 38px;
+    }
+    #subtitle{
+        font-size:20px;
     }
 }

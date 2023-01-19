@@ -4,19 +4,12 @@ import gallery_header_img from '../gallery_header_img.png'
 import { motion } from 'framer-motion'
 import { pageAnim } from '../AnimUtility'
 import { useQuery } from '@apollo/client'
-import { GET_GALLERY_IMAGES} from '../App.js'
+import { GET_GALLERY_IMAGES} from '../queries.js'
 
 const GalleryPage = () => {
 
   const {loading, error, data} = useQuery(GET_GALLERY_IMAGES);
 
-  useEffect(()=>{
-    console.log(loading);
-  }, [])
-
-  useEffect(()=>{
-    console.log(data);
-  }, [data]);
 
   return (
     <motion.div className='flex flex-col justify-center pb-[200px]'
@@ -32,11 +25,11 @@ const GalleryPage = () => {
         </div>
       </div>
 
-      <div className='pt-[150px] sm:w-[90%] w-[95%] mx-auto flex flex-row flex-wrap justify-center sm:gap-10 gap-6'>
+      <div className='pt-[150px] sm:w-[90%] w-[95%] mx-auto flex flex-row flex-wrap justify-center sm:gap-10 gap-6  min-h-screen'>
         {
           data 
           ?
-          data.galleryImages.map(obj =>{return (<GalleryImage url={obj.image.url} alt={obj.imageTitle}/>)})
+          data.galleryImages.map(obj =>{return (<GalleryImage url={obj.image.url} alt={obj.imageTitle} key={obj.imageTitle}/>)})
           : null
         }
       </div>

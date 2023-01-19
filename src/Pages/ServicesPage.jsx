@@ -9,7 +9,7 @@ const ServicesPage = () => {
     <div className='flex flex-col w-[100%] pb-[200px]'>
       <div id="contact_header_img" className='mt-[50px] pb-[50px] flex flex-col border-black border-b justify-start items-center'
         style={{backgroundImage: `url(${services_header_img})`}}>
-        <div id="contact_page_header" className='mx-auto sm:text-7xl text-6xl font-semibold pt-[50px] mt-10 text-white'>
+        <div id="contact_page_header" className='mx-auto sm:text-7xl text-6xl font-semibold pt-[50px] mt-10 text-white text-center'>
         Our Services
         </div>
         <div id='' className='mx-auto text-center sm:text-3xl text-2xl superlight_txt pt-2 text-white'>
@@ -48,7 +48,7 @@ const ServicesPage = () => {
                     
                   <div className='sm:text-4xl text-3xl pfd mt-8'>New Storage</div>
                     <div className='sm:text-2xl text-xl light_txt hvn mt-2'>
-                    We’ll fill out an empty wall with shelves or other storage compartments, or upgrade metal shelves to finely finished wood
+                    We’ll install new shelves, or upgrade your existing ones
                     </div>
 
                     <div className='sm:text-4xl text-3xl pfd mt-8'>Flooring</div>
@@ -72,7 +72,7 @@ const ServicesPage = () => {
         </div>
 
         <div id="quality_content" className='flex sm:flex-row flex-col w-[100%] sm:mt-[100px] mt-[175px] justify-center'>
-            <div id="tile_bath_img" className='flex bg-stone-100 sm:h-[550px] h-[250px] sm:w-[50%] w-[100%] border-black border'
+            <div id="tile_bath_img" className='flex bg-stone-100 sm:h-[650px] h-[250px] sm:w-[50%] w-[100%] border-black border'
               style={{backgroundImage: `url(${tile_bathroom})`}}>
             </div>
             <div className='flex flex-col bg-stone-100 col-sp items-center justify-start sm:w-[50%] w-[100%] border-black border border-r-0 sm:pb-0 pb-[25px]'>
