@@ -1,9 +1,62 @@
-import React from 'react'
+import React, {useState} from 'react'
 import contact_img_bg from '../contact_img_bg.png'
-import { motion } from 'framer-motion'
+import {motion } from 'framer-motion'
 import { pageAnim } from '../AnimUtility'
+import { gql, useMutation } from '@apollo/client';
+
+const ADD_INQUIRY = gql`
+  mutation CreateCustomerInquiry(
+    $customerName: String!,
+    $emailAddress: String!,
+    $message: String!
+  ) {
+    createCustomerInquiry(data: { customerName: $customerName, emailAddress: $emailAddress, message: $message }){
+      id,
+      customerName,
+      emailAddress,
+      message
+    }
+  }`;
+  //mutation AddTodo($type: String!) {
+  //  createCustomerInquiry(data: {customerName: "", emailAddress: "", message: ""})
+  //}
 
 const ContactPage = () => {
+
+  const [info, setInfo] = useState({
+    name: "",
+    email: "",
+    message: "",
+  })
+  const [addInquiry] = useMutation(ADD_INQUIRY, {variables: {
+    customerName: info.name,
+    emailAddress: info.email,
+    message: info.message,
+  }});
+
+
+/*
+   {variables: {
+    customerName: info.name,
+    emailAddress: info.email,
+    message: info.message
+  }}
+ */
+
+
+  function handleFormSubmit(event){
+    event.preventDefault();
+    console.log(info);
+    if(info.name !== "" && info.email !== "" && info.message !== ""){
+    addInquiry();
+    setInfo({name:"", email:"", message:""});
+    }
+  }
+
+
+
+
+
   return (
     <motion.div className='flex flex-col pb-[0px]'
     variants={pageAnim} initial="initial" animate="animate">
@@ -18,25 +71,25 @@ const ContactPage = () => {
         </div>
 
         <div id="contact_form" className='border-black border bg-stone-100 sm:w-[50%] w-10/12 h-[350px] mt-8'>
-          <form className='flex flex-col w-[90%] mx-auto mt-8'>
+          <form className='flex flex-col w-[90%] mx-auto mt-8' onSubmit={e => handleFormSubmit(e)} autocomplete="off">
             <div className='flex flex-row justify-center'>
-              <label className='w-[100%]'>
-                <input className='w-[90%] p-1' type="text" name="name" placeholder="Name" />
-              </label>
-              <label  className='w-[100%]'>
-                <input className='w-[90%] p-1' type="text" name="email" placeholder="Email address" />
-              </label>
+              <div className='w-[100%]'>
+                <input className='w-[90%] p-1' required id="name_field" type="text" name="name" placeholder="Name" value={info.name} onChange={e=>setInfo({...info, name: e.target.value})}/><div className="inline text-red-600">*</div>
+              </div>
+              <div  className='w-[100%]'>
+                <input className='w-[90%] p-1' type="email" name="email" placeholder="Email address" value={info.email} onChange={e=>setInfo({...info, email: e.target.value})}/>
+              </div>
             </div>
-            <label className='mt-4'>
-              <textarea className='w-[95%] p-1 h-[150px] max-h-[200px]' name="message" placeholder="Message" />
-            </label>
-            <label className='flex flex-row justify-center pt-4 pb-4'>
+              <div className='mt-4'>
+                <textarea className='w-[95%] p-1 h-[150px] max-h-[200px]' required name="message" placeholder="Message" value={info.message} onChange={e=>setInfo({...info, message: e.target.value})}/>
+              </div>
+            <div className='flex flex-row justify-center mt-4 mb-4'>
               <input type='submit' name='submit' value="Submit" className='pfd bg-black px-6 py-1 text-white text-lg'/>
-            </label>
+            </div>
           </form>
         </div>
 
-        <div className='mt-12 pfd text-4xl text-white'>
+        <div className='mt-12 pfd text-4xl text-white text-center'>
         Want to Call Instead?
         </div>
         <div className='mt-2 hvn text-xl light_txt text-white w-10/12 mx-auto text-center'>

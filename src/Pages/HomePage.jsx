@@ -14,7 +14,7 @@ const HomePage = () => {
     variants={pageAnim} initial="initial" animate="animate">
         <div id="hero_img" className='flex flex-col border-black border-b justify-start items-center'
         style={{backgroundImage: `url(${hero_img})`}}>
-            <div className='flex flex-col md:ml-[40%] ml-[10%]'>
+            <div className='flex flex-col md:ml-[40%] ml-[5%]'>
             <div id="title" className=''>
             ILIE & FLORICA
             </div>

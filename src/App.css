@@ -141,3 +141,28 @@ body{overflow-x:hidden !important;}
         outline: 2px solid black;
     }
 }
+
+@media only screen and (max-width: 470px){
+    #title{
+        font-size: 52px;
+    }
+    #subtitle{
+        font-size:24px;
+    }
+}
+@media only screen and (max-width: 410px){
+    #title{
+        font-size: 46px;
+    }
+    #subtitle{
+        font-size:22px;
+    }
+}
+@media only screen and (max-width: 470px){
+    #title{
+        font-size: 38px;
+    }
+    #subtitle{
+        font-size:20px;
+    }
+}
