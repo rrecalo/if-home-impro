@@ -23,7 +23,7 @@ const GalleryPage = () => {
         Gallery
         </div>
         <div id='' className='mx-auto text-center text-3xl superlight_txt pt-2 text-white'>
-        A quick look at what our work looks like.
+        A quick look at what our work looks like
         </div>
       </div>
 

@@ -19,19 +19,16 @@ body{overflow-x:hidden !important;}
 }
 
 #hero_img{
-    width:100vw;
     height: 689px;
     background-size: 100%;
     background-repeat: no-repeat !important;
 }
 #contact_header_img{
-    width:100vw;
     background-size:cover;
     background-position: 50% 50%;
     background-repeat: no-repeat !important;
 }
 #about_header_img{
-    width:100vw;
     height: 200px;
     background-size:cover;
     background-position: 50% 50%;

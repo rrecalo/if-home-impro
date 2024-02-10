@@ -15,17 +15,17 @@ const HomePage = () => {
         <div id="hero_img" className='flex flex-col border-black border-b justify-start items-center'
         style={{backgroundImage: `url(${hero_img})`}}>
             <div className='flex flex-col md:ml-[40%] ml-[5%]'>
-            <div id="title" className=''>
-            ILIE & FLORICA
+            <div id="title" className='mt-8 sm:mt-4'>
+                ILIE & FLORICA
             </div>
             <div id="subtitle" className=''>
-            Expert Home Improvements that you can afford
+                Expert Home Improvements that you can afford
             </div>
             <div className='flex justify-center'>
-            <Link to='/contact' className='sm:w-[50%] w-[75%]'> 
-            <button id='cta_btn' className='ml-[0%] bg-black text-white light_txt mt-8 h-12 w-[100%] md:text-xl opacity-90 lg:text-2xl text-xl'>
-                Get Your Free Estimate 
-            </button>
+            <Link to='/contact' className='sm:w-[50%] w-[75%] px-6 sm:px-2'> 
+                <button id='cta_btn' className='ml-[0%] bg-black text-white light_txt mt-6 h-12 w-[100%] md:text-xl opacity-90 lg:text-2xl text-lg'>
+                    Book A Free Estimate
+                </button>
             </Link>
             </div>
             

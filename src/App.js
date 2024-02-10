@@ -19,6 +19,7 @@ function App() {
   return (
     <>
     <Navbar />
+    <div className='2xl:w-[75%] 2xl:mx-auto 2xl:border-l 2xl:border-r 2xl:border-black'>
     <Routes>
     <Route path="/" element={<HomePage />} />
     <Route path="/about" element={<AboutPage />} />
@@ -29,6 +30,7 @@ function App() {
     <Route path="/tos" element={<TermsPage />} />
     <Route path="/*" element={<HomePage />} />
     </Routes>
+    </div>
     <Footer />
     <ScrollToTop />
     </>
