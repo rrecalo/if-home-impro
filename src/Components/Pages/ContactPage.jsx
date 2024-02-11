@@ -2,6 +2,7 @@ import React from 'react'
 import contact_img_bg from '../../Images/contact_img_bg.png'
 import {motion } from 'framer-motion'
 import { pageAnim } from '../AnimUtility'
+import ContactForm from '../ContactForm'
 //import { gql, useMutation } from '@apollo/client';
 
 /**
@@ -73,17 +74,12 @@ const ContactPage = () => {
         Any questions, concerns, and job inquiries are welcome
         </div>
 
-        <div className='mt-2 hvn text-xl light_txt text-white w-10/12 mx-auto text-center mt-[100px]'>
-        Email us with your questions at <span className='font-medium'>ifhomeimpro@gmail.com</span> and we'll get back to you ASAP.
+        <div className='w-[90%] sm:w-[50%] mt-10'> 
+          <ContactForm />
         </div>
-
-
-        
-        <div className='mt-2 hvn text-xl light_txt text-white w-10/12 mx-auto text-center'>
-        Also, feel free to call or text <span className='font-medium'>678-360-2882</span> between the hours of 9AM-6PM Eastern Standard Time
-        </div>
+      
+    
       </div>
-
 
     </motion.div>
   )
