@@ -1,9 +1,9 @@
 ![promo](https://user-images.githubusercontent.com/103965989/213536532-08889f25-418f-4e6b-94fb-1681a6fc760b.png)
 
-Nightly production build available at: https://ifhomeimpro.netlify.app
+LIVE production build available at: https://ifhomeimpro.com
 
 
-## --- This project is actively Under Development --- ## 
+## --- This project receives some development updates, but is currently in maintenance mode --- ## 
 Fully Responsive React App built for a home-improvement/remodeling business
 
 * Designed in Figma
@@ -20,7 +20,7 @@ Features fully responsive navigation and layout
 
 Content Delivery System (CDN) of Gallery Images using HyGraph (GraphQL Headless CMS)
 
-Lightweight animations using framer-motion, a production-ready React animation library
+Lightweight animations using framer-motion
 
 
 ## Development Dependencies ##
