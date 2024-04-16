@@ -71,7 +71,7 @@ const ServicesPage = () => {
         New Construction & Other
       </div>  
       <div className='text-2xl light_txt mt-2 mx-2 text-center'>
-        Building a new home, or need a service not listed above?<br/> We'll be able to help - let's chat!
+        Building a new home or need a service not listed above?<br/> We'll be able to help - let's chat!
       </div>
       <Link to='/contact' className='w-1/2 sm:w-[25%] mx-auto'> 
         <button id='cta_btn' className='w-full bg-black text-white mt-8 h-12 px-4 py-2 lg:text-2xl md:text-xl text-xl'>
