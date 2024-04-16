@@ -1,97 +1,88 @@
 import React from 'react'
 import services_header_img from '../../Images/services_header_img.png'
-import paint_roller from '../../Images/paint_roller.png'
-import wood_stack from '../../Images/wood_stack.png'
-import tile_bathroom from '../../Images/tile_bathroom.png'
+import paint_roller from './../../Images/paint_roller.jpeg'
+import siding from '../../Images/siding.jpeg'
+import brick from '../../Images/brick.jpeg'
+import cabinetry from '../../Images/cabinetry.jpeg'
+import ServiceComponent from '../ServiceComponent'
+import door from '../../Images/door.jpeg'
+import deck from '../../Images/deck.jpeg'
+import tile_shower from '../../Images/tile_shower.jpeg'
+import backsplash from '../../Images/backsplash.jpeg'
+import bathroom from '../../Images/bathroom.jpeg'
+import floor from '../../Images/floor.jpeg'
+import { Link } from 'react-router-dom'
+import woodwork from '../../Images/woodwork.jpeg'
 
 const ServicesPage = () => {
   return (
     <div className='flex flex-col w-[100%] pb-[200px]'>
+
       <div id="contact_header_img" className='mt-[50px] pb-[50px] flex flex-col border-black border-b justify-start items-center'
         style={{backgroundImage: `url(${services_header_img})`}}>
         <div id="contact_page_header" className='mx-auto sm:text-7xl text-6xl font-semibold pt-[50px] mt-10 text-white text-center'>
-        Our Services
+          Our Services
         </div>
         <div id='' className='mx-auto text-center sm:text-3xl text-2xl superlight_txt pt-2 text-white'>
-        From painting, to carpentry to tiles - we’ve done it all
+          From painting, to carpentry to tiles - we’ve done it all
         </div>
       </div>
 
-      <div id="quality_content" className='flex sm:flex-row flex-col w-[100%] sm:mt-[100px] mt-[175px] justify-center'>
-            <div id="paint_roller_img" className='flex bg-stone-100 sm:w-[50%] w-[100%] sm:h-[600px] h-[250px] border-black border'
-              style={{backgroundImage: `url(${paint_roller})`}}>
-            </div>
-            <div className='flex flex-col bg-stone-100 col-sp items-center justify-start sm:w-[50%] w-[100%] border-black border border-r-0 sm:pb-0 pb-[25px]'>
-                <div className='w-[90%] text-left'>
-                  <div className='sm:text-6xl text-4xl pfd font-semibold mt-12'>Painting</div>
-                    <div className='sm:text-4xl text-3xl pfd mt-6'>Exterior</div>
-                      <div className='sm:text-2xl text-xl light_txt hvn mt-2'>
-                      Brick, siding, stucco and more.
-                      Got a problem? - we've got a paint sprayer
-                      </div>
+      <div id="header1" className='mt-20 mb-5 text-center text-3xl'>
+        Interior and Exterior Painting
+      </div>  
 
-                  <div className='text-3xl pfd mt-6'>Interior</div>
-                    <div className='sm:text-2xl text-xl light_txt hvn mt-2'>
-                    Whether its an accent wall, storage closet, or baby nursery, we'll get it coated
-                  </div>
-                </div>
-
-            </div>
-            
+      <div className='w-full flex justify-center items-center'>
+        <div className='sm:w-9/12 mx-auto h-fit mt-2 flex flex-wrap justify-around gap-1'>
+          <ServiceComponent img={paint_roller} name={"Interior Walls"}/>
+          <ServiceComponent img={door} name={"Doors & Trims"}/>
+          <ServiceComponent img={cabinetry} name={"Custom/Accent Walls"}/>
+          <ServiceComponent img={siding} name={"Exterior Siding"}/>
+          <ServiceComponent img={brick} name={"Exterior Brick"}/>
+          <ServiceComponent img={deck} name={"Wood Staining/Sealing"}/>
         </div>
+      </div>
 
-        <div id="quality_content" className='flex sm:flex-row flex-col w-[100%] sm:mt-[100px] mt-[175px]  justify-center'>
-            
-            <div className='flex flex-col bg-stone-100 col-sp items-center justify-start sm:w-[50%] w-[100%] border-black border border-r-0 pb-[50px]'>
-                <div className='w-[90%] text-left'>
-                  <div className='sm:text-6xl text-5xl pfd font-semibold mt-12'>Basic Carpentry</div>
-                    
-                  <div className='sm:text-4xl text-3xl pfd mt-6'>New Storage</div>
-                    <div className='sm:text-2xl text-xl light_txt hvn mt-2'>
-                    We’ll install new shelves, or upgrade your existing ones
-                    </div>
+      <div id="header1" className='mt-20 mb-5 text-center text-3xl'>
+        Tilework
+      </div>  
 
-                    <div className='sm:text-4xl text-3xl pfd mt-6'>Flooring</div>
-                    <div className='sm:text-2xl text-xl light_txt hvn mt-2'>
-                    We’ll roll out fresh carpet or install LVP for you, but we don’t do hardwood
-                    </div>
-                  
-                    <div className='sm:text-4xl text-3xl pfd mt-6'>Trim / Casing</div>
-                    <div className='sm:text-2xl text-xl light_txt hvn mt-2'>
-                    Finally want rid of your vintage stained trim? We’ll handle it - from the miter saw to the paintbrush
-                    </div>
-
-                  </div>
-
-                  
-
-            </div>
-            <div id="wood_stack_img" className='flex bg-stone-100 sm:w-[50%] w-[100%] sm:h-[750px] h-[250px] border-black border'
-              style={{backgroundImage: `url(${wood_stack})`}}>
-            </div>
+      <div className='w-full flex justify-center items-center'>
+        <div className='sm:w-9/12 mx-auto h-fit mt-2 flex flex-wrap justify-around gap-1'>
+          <ServiceComponent img={tile_shower} name={"Showers"}/>
+          <ServiceComponent img={bathroom} name={"Entire Bathroom"}/>
+          <ServiceComponent img={backsplash} name={"Counter Backsplash"}/>
         </div>
+      </div>
 
-        <div id="quality_content" className='flex sm:flex-row flex-col w-[100%] sm:mt-[100px] mt-[175px] justify-center'>
-            <div id="tile_bath_img" className='flex bg-stone-100 sm:h-[650px] h-[250px] sm:w-[50%] w-[100%] border-black border'
-              style={{backgroundImage: `url(${tile_bathroom})`}}>
-            </div>
-            <div className='flex flex-col bg-stone-100 col-sp items-center justify-start sm:w-[50%] w-[100%] border-black border border-r-0 sm:pb-0 pb-[25px]'>
-                <div className='w-[90%] text-left'>
-                  <div className='sm:text-6xl text-5xl pfd font-semibold mt-12'>Tile Work</div>
-                    <div className='sm:text-4xl text-3xl pfd mt-6'>Backsplash</div>
-                      <div className='sm:text-2xl text-xl light_txt hvn mt-2'>
-                      Give your kitchen a revitalized look with a newly tiled backsplash
-                      </div>
+      <div id="header1" className='mt-20 mb-5 text-center text-3xl'>
+        Miscellaneous
+      </div>  
 
-                  <div className='sm:text-4xl text-3xl pfd mt-6'>Bathroom tile</div>
-                    <div className='sm:text-2xl text-xl light_txt hvn mt-2'>
-                    As custom as you want, we’ll install bathroom tiles from floor to ceiling (showers too)
-                  </div>
-                </div>
-
-            </div>
-            
+      <div className='w-full flex justify-center items-center'>
+        <div className='sm:w-9/12 mx-auto h-fit mt-2 flex flex-wrap justify-around gap-1'>
+          <ServiceComponent img={floor} name={"Vinyl Plank Flooring"}/>
+          <ServiceComponent img={woodwork} name={"Custom woodwork"}/>
         </div>
+      </div>
+
+
+      <div id="header1" className='mt-40 mb-5 text-center text-3xl'>
+        New Construction & Other
+      </div>  
+      <div className='text-2xl light_txt mt-2 mx-2 text-center'>
+        Building a new home, or need a service not listed above?<br/> We'll be able to help - let's chat!
+      </div>
+      <Link to='/contact' className='w-1/2 sm:w-[25%] mx-auto'> 
+        <button id='cta_btn' className='w-full bg-black text-white mt-8 h-12 px-4 py-2 lg:text-2xl md:text-xl text-xl'>
+            Contact Us
+        </button>
+      </Link>
+
+      {/* <div className='mx-auto text-center sm:text-2xl text-xl pt-20'> 
+        We specialize in painting services, and can meet a variety of other needs for your remodeling project - large or small
+      </div> */}
+
 
     </div>
   )
