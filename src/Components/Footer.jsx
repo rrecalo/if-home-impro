@@ -9,7 +9,7 @@ const Footer = () => {
 
 
         <div className='lg:w-3/12 w:6/12 h-4/6 flex flex-col'>
-            <div className='flex flex-row items-start justify-between'>
+            <div className='flex flex-row items-start gap-5 sm:gap-0 justify-between'>
                 <div className='flex flex-col items-start justify-start '>
                     <div className='text-sm pfd font-semibold pb-2'>Contact Info</div>
                     <div className='text-xs pb-1 font-light'>contact@ifhomeimpro.com</div>
