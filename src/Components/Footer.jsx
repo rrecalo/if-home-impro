@@ -12,8 +12,8 @@ const Footer = () => {
             <div className='flex flex-row items-start justify-between'>
                 <div className='flex flex-col items-start justify-start '>
                     <div className='text-sm pfd font-semibold pb-2'>Contact Info</div>
-                    <div className='text-xs pb-1 font-light'>ifhomeimpro@gmail.com</div>
-                    <div className='text-xs font-light'>678-360-2882 <span className='light_txt'>(9AM-6PM)</span></div>
+                    <div className='text-xs pb-1 font-light'>contact@ifhomeimpro.com</div>
+                    <div className='text-xs font-light'>404-916-1492<span className='light_txt'>(9AM-6PM)</span></div>
                 </div>
                 
                 

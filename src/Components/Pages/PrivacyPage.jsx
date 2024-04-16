@@ -196,8 +196,8 @@ const PrivacyPage = () => {
         <h1 className='text-xl font-semibold'>Contact Us</h1>
         <p>If you have any questions about this Privacy Policy, You can contact us:</p>
             <ul className='flex flex-col gap-6 pb-[100px]'>
-        <li>By email: ifhomeimpro@gmail.com</li>
-        <li>By phone: 678-360-2882</li>
+        <li>By email: contact@ifhomeimpro.com</li>
+        <li>By phone: 404-916-1492</li>
         </ul>
 </div>
   )
