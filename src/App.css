@@ -42,7 +42,7 @@ body{overflow-x:hidden !important;}
 }
 .gallery_img{
     height:500px;
-    outline: 5px solid black;
+    outline: 1px solid black;
 }
 #tile_bath_img{
     background-size: cover;
@@ -150,7 +150,7 @@ h2{
 @media only screen and (max-width:639px){
     .gallery_img{
         height:auto !important;
-        outline: 2px solid black;
+        outline: 1px solid black;
     }
 }
 

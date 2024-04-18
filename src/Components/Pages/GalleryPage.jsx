@@ -27,7 +27,7 @@ const GalleryPage = () => {
         </div>
       </div>
 
-      <div className='pt-[150px] sm:w-[90%] w-[95%] mx-auto flex flex-row flex-wrap justify-center sm:gap-10 gap-6  min-h-screen'>
+      <div className='pt-[150px] sm:w-[90%] w-[95%] mx-auto flex flex-row flex-wrap justify-center gap-1 min-h-screen'>
         {
           data 
           ?
