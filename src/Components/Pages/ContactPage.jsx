@@ -1,5 +1,5 @@
 import React from 'react'
-import contact_img_bg from '../../Images/contact_img_bg.png'
+import contact_img_bg from '../../Images/contact_img_bg.jpg'
 import {motion } from 'framer-motion'
 import { pageAnim } from '../AnimUtility'
 import ContactForm from '../ContactForm'

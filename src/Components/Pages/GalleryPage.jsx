@@ -1,6 +1,6 @@
 import React from 'react'
 import GalleryImage from '../GalleryImage'
-import gallery_header_img from '../../Images/gallery_header_img.png'
+import gallery_header_img from '../../Images/gallery_header_img.jpg'
 import { motion } from 'framer-motion'
 import { pageAnim } from '../AnimUtility'
 import { useQuery } from '@apollo/client'

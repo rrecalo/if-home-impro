@@ -1,5 +1,5 @@
 import React from 'react'
-import services_header_img from '../../Images/services_header_img.png'
+import services_header_img from '../../Images/services_header_img.jpg'
 import paint_roller from './../../Images/paint_roller.jpeg'
 import siding from '../../Images/siding.jpeg'
 import brick from '../../Images/brick.jpeg'
