@@ -57,7 +57,7 @@ const ContactForm = () => {
                         <div className='flex flex-row gap-2'>
                             <textarea name="message" className='p-1 w-[100%] min-h-[100px] sm:min-h-[150px] max-h-[175px]' value={input.message} onChange={(e)=>setInput({...input, message: e.target.value})}/>
                         </div>
-                        <button type="submit" className='w-1/2 sm:w-1/4 mx-auto mt-[25px] p-2 bg-neutral-800 text-white'>Submit</button>
+                        <button id="cta_btn" type="submit" className='w-1/2 sm:w-1/4 mx-auto mt-[25px] p-2 bg-neutral-800 text-white rounded-md'>Submit</button>
                 </div>
             </form>
             {/* <Form /> */}
