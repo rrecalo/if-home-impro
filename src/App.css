@@ -72,9 +72,9 @@ body{overflow-x:hidden !important;}
     font-weight:400;
 }
 #subtitle{
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-size:32px;
-    font-weight: 300;
+    font-weight: 400;
 }
 #header1, #xp_header{
     font-family: 'Playfair Display', sans-serif;
