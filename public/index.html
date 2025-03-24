@@ -35,17 +35,19 @@
     <title>I&F Home Impro</title>
   </head>
   <body>
-    <form name="contact" method="post" netlify netlify-honeypot="bot-field" hidden>
-      <input name="firstName" type="text" />
-      <input name="lastName" type="text"/>
-      <input type="email" name="email">
-      <input name="email" type="email"/>
-      <input type="tel" id="phone" name="phone" />
-      <select name="subject"/>
-      <textarea name="message"></textarea>
-    </form>
+    
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <form name="contact" method="post" netlify netlify-honeypot="bot-field" hidden>
+        <input name="firstName" type="text" />
+        <input name="lastName" type="text"/>
+        <input type="email" name="email">
+        <input name="email" type="email"/>
+        <input type="tel" id="phone" name="phone" />
+        <select name="subject"/>
+        <textarea name="message"></textarea>
+      </form>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
