@@ -38,7 +38,7 @@ const ContactForm = () => {
                         <label className='font-light'>Phone # (XXX-XXX-XXXX)</label>
                         <div className='flex flex-row gap-2'>
                             <input className='p-1 w-[100%]' type="tel" id="phone" name="phone" 
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required  value={input.phoneNumber} onChange={(e)=>setInput({...input, phoneNumber: e.target.value})}/>
+                             required  value={input.phoneNumber} onChange={(e)=>setInput({...input, phoneNumber: e.target.value})}/>
                         </div>
                     </div>
                 </div>

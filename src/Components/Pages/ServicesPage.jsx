@@ -55,7 +55,7 @@ const ServicesPage = () => {
         </div>
       </div>
 
-      <div id="header1" className='mt-20 mb-5 text-center text-3xl'>
+      {/* <div id="header1" className='mt-20 mb-5 text-center text-3xl'>
         Miscellaneous
       </div>  
 
@@ -64,7 +64,7 @@ const ServicesPage = () => {
           <ServiceComponent img={floor} name={"Vinyl Plank Flooring"}/>
           <ServiceComponent img={woodwork} name={"Custom woodwork"}/>
         </div>
-      </div>
+      </div> */}
 
 
       <div id="header1" className='mt-40 mb-5 text-center text-3xl'>
