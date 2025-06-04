@@ -8,7 +8,7 @@ export const GET_GALLERY_IMAGES = gql`
       image {
         url(transformation: {
           image: {
-            resize: { width: 1200 }
+            resize: { width: 600 }
           }
         })
       }
